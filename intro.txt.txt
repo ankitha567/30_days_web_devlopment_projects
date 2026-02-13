@@ -1,0 +1,64 @@
+🗓️ 30-Day Project Ideas
+Week 1 – HTML & CSS Basics
+Personal Portfolio Page – simple bio and links.
+
+Resume Page – structured with sections.
+
+Quotes Page – styled text with blockquotes.
+
+Recipe Page – lists, images, ingredients.
+
+Photo Gallery – grid layout with CSS.
+
+Blog Layout – header, footer, articles.
+
+Landing Page – hero section + call to action.
+
+Week 2 – CSS Styling & Layouts
+Color Palette Page – experiment with colors.
+
+Flexbox Layout Practice – responsive boxes.
+
+CSS Grid Layout Practice – card layout.
+
+Pricing Table – styled comparison table.
+
+Contact Form – styled inputs and buttons.
+
+Navigation Bar – horizontal/vertical menus.
+
+Responsive Layout – mobile‑friendly design.
+
+Week 3 – JavaScript Basics
+Digital Clock – live time display.
+
+Counter App – increment/decrement buttons.
+
+To‑Do List – add/remove tasks.
+
+Calculator – basic math operations.
+
+Image Slider – next/previous buttons.
+
+Modal Popup – open/close overlay.
+
+Accordion Menu – expand/collapse sections.
+
+Week 4 – Interactive Projects
+Quiz App – multiple choice questions.
+
+Weather App – fetch API data.
+
+Notes App – save notes with local storage.
+
+Rock‑Paper‑Scissors Game – simple logic.
+
+Expense Tracker – add/remove expenses.
+
+Music Player – play/pause audio.
+
+Chat UI (Static) – styled chat interface.
+
+E‑commerce Product Page – product cards.
+
+Final Portfolio Website – combine all skills.
