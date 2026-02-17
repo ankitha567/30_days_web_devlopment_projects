@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Palette Experiment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+  background: url("d8b.jpg") no-repeat center center fixed;
+      margin: 0;
+      padding: 70px;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      font-size: 59px;
+    }
+    .palette {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 50px;
+      margin-top: 20px;
+    }
+    .color-box {
+      height: 120px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: bold;
+      transition: transform 0.2s;
+ 
+ text-transform: uppercase;
+
+    }
+    .color-box:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Color Palette Experiment</h1>
+  <div class="palette">
+    <div class="color-box" style="background:#FF6F61;">#FF6F61</div>
+    <div class="color-box" style="background:#6B5B95;">#6B5B95</div>
+    <div class="color-box" style="background:#88B04B;">#88B04B</div>
+    <div class="color-box" style="background:#F7CAC9; color:#333;">#F7CAC9</div>
+    <div class="color-box" style="background:#92A8D1;">#92A8D1</div>
+    <div class="color-box" style="background:#FFD700; color:#333;">#FFD700</div>
+    <div class="color-box" style="background:#FF4500;">#FF4500</div>
+    <div class="color-box" style="background:#2E8B57;">#2E8B57</div>
+        <div class="color-box" style="background:#2b4ac5;">#2b4ac5</div>
+        <div class="color-box" style="background:#6ccd74;">#6ccd74</div>
+        <div class="color-box" style="background:#b122cd;">#b122cd</div>
+        <div class="color-box" style="background:#19a9b4;">#19a9b4</div>
+        <div class="color-box" style="background:#184105;">#184105</div>
+        <div class="color-box" style="background:#dc5a19;">#dc5a19</div>
+        <div class="color-box" style="background:#c6b72a;">#c6b72a</div>
+        <div class="color-box" style="background:#e11c65;">#e11c65</div>
+        <div class="color-box" style="background:#123d45;">#123d45</div>
+        <div class="color-box" style="background:#537826;">#537826</div>
+        <div class="color-box" style="background:#6c0fa5;">#6c0fa5</div>
+        <div class="color-box" style="background:#5166bc;">#5166bc</div>
+        <div class="color-box" style="background:#06a47f;">#06a47f</div>
+        <div class="color-box" style="background:#072081;">#072081</div>
+
+  </div>
+
+  <script>
+    document.querySelectorAll('.color-box').forEach(box => {
+      box.addEventListener('click', () => {
+        const color = box.textContent;
+        navigator.clipboard.writeText(color).then(() => {
+          alert(`Copied ${color} to clipboard!`);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

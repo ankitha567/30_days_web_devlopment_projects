@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grid Card Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Grid container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      text-align: center;
+      justify-content: center;
+       align-items: center;
+    }
+    /* Card styling */
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      margin: 0 0 10px;
+      color: #333;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .card-button {
+      margin: 15px;
+      padding: 10px;
+      background: #6B5B95;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      align-self: flex-start;
+      text-align: center;
+    }
+    .card-button:hover {
+      background: #FF6F61;
+    }
+  </style>
+</head>
+<body>
+  <h1> CSS Grid Card Layout</h1>
+  <div class="grid-container">
+    <div class="card">
+      <img src="img1.jpg" alt="Shoe">
+      <div class="card-content">
+        <h2 class="card-title">Stylish Shoes</h2>
+        <p class="card-text">Comfortable sneakers perfect for everyday wear.</p>
+      </div>
+      <button class="card-button">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="img2.jpg" alt="Headphones">
+      <div class="card-content">
+        <h2 class="card-title"> Headphones</h2>
+        <p class="card-text">Experience high-quality sound with noise cancellation.</p>
+      </div>
+      <button class="card-button">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="img3.jpg" alt="Laptop">
+      <div class="card-content">
+        <h2 class="card-title">Modern Laptop</h2>
+        <p class="card-text">Lightweight and powerful, ideal for work and play.</p>
+      </div>
+      <button class="card-button">Buy Now</button>
+    </div>
+  </div>
+</body>
+</html>
